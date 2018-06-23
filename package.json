@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "A MERN stack based social media application",
   "author": "Steve Foster",
-  "license": "MIT",
+  "license": "",
   "keywords": [
     "react",
     "express",
     "mongodb",
     "node",
-    "mern"
+    "mern",
+    "heroku"
   ],
   "repository": {
     "type": "git",
@@ -20,7 +21,7 @@
   "scripts": {
     "development": "nodemon",
     "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
-    "start": "node ./server/server.js"
+    "start": "node ./dist/server.generated.js"
   },
   "engines": {
     "node": "8.11.1",
